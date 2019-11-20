@@ -8,13 +8,20 @@ describe('Shop-button',_ => {
        browser.waitUntil(() => {
          return browser.$('shop-app')
            .shadow$('shop-home')
-           .shadow$('.item:nth-child(4) > shop-button')
-           .$('a').isExisting();
+           .shadow$('.item:nth-child(4) shop-button a')
+           .isExisting();
        });
        button = browser.$('shop-app')
          .shadow$('shop-home')
-         .shadow$('.item:nth-child(4) > shop-button')
-         .$('a');
+         .shadow$('.item:nth-child(4) shop-button a');
+
+        // //another way to find shadow elements
+        // button = browser.$(_ => {
+        //     return document
+        //       .querySelector('shop-app').shadowRoot
+        //       .querySelector('shop-home').shadowRoot
+        //       .querySelector('.item:nth-child(4) shop-button a');
+        // });
     });
 
     beforeEach(_ => {

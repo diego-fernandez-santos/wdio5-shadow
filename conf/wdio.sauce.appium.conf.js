@@ -20,10 +20,10 @@ exports.config = Object.assign(baseConf.config,
         },
         {
             browserName: 'Safari',
-            appiumVersion: '1.9.1',
-            deviceName: 'iPhone X Simulator',
+            appiumVersion: '1.15.0',
+            deviceName: 'iPhone 11 Pro Max Simulator',
             deviceOrientation: 'portrait',
-            platformVersion: '11.3',
+            platformVersion: '13.0',
             platformName: 'iOS'
         },
 
