@@ -1,0 +1,22 @@
+{
+  "name": "wdio5-shadom",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "test": "npx wdio conf/wdio.sauce.conf.js"
+  },
+  "dependencies": {
+    "perf_hooks": "0.0.1",
+    "webdriverio": "^5.12.5"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^5.16.7",
+    "@wdio/local-runner": "^5.16.7",
+    "@wdio/mocha-framework": "^5.16.5",
+    "@wdio/sauce-service": "^5.16.5",
+    "@wdio/spec-reporter": "^5.16.5",
+    "@wdio/sync": "^5.16.5",
+    "chromedriver": "^78.0.1",
+    "wdio-chromedriver-service": "^5.0.2"
+  }
+}
